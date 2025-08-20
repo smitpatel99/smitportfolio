@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             </button>
             
             <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-primary-500 hover:text-primary-500 transition-all duration-200 flex items-center gap-2">
-              <a href="/Web_designer.pdf" className='inline-flex gap-2'>
+              <a href="/Smit_CV.pdf" className='inline-flex gap-2'>
               <Download size={20} />
               Download Resume
               </a>
