@@ -1,25 +1,65 @@
 import React from 'react';
-import { ExternalLink, Github, Smartphone, Globe, ShoppingCart } from 'lucide-react';
+import { ExternalLink, Github, Globe, ShoppingCart } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A modern e-commerce platform with advanced filtering, payment integration, and responsive design.',
-      image: 'https://images.pexels.com/photos/38519/macbook-laptop-ipad-apple-38519.jpeg',
-      tech: ['React', 'Node.js', 'MongoDB'],
-      liveUrl: '#',
+      title: 'Lens Legacy',
+      description: 'LensLegacy is a stunning prebuilt WordPress Elementor website designed specifically for photographers to showcase their portfolio.',
+      image: 'https://wdesignkit.com/images/uploads/wpdk-1/templates_images/LensLegacy%20_%20Photography%20Portfolio%20Figma%20Design%20Template%20kit-3350.png',
+      tech: ['WordPress', 'CSS', 'BootStrap', 'JavaScript', 'jQuery'],
+      liveUrl: 'https://etemplates.wdesignkit.com/lenslegacy/',
+      githubUrl: 'https://wdesignkit.com/templates/kit/lens-legacy--elementor-template-kit/14042',
+      icon: <Globe size={24} />
+    },
+    {
+      id: 2,
+      title: 'PlanPro Interior',
+      description: 'Planpro is a prebuilt WordPress Elementor website designed for architecture and interior design firms. The website features a modern and sleek design with a focus on showcasing stunning architectural projects and interior design work.',
+      image: 'https://wdesignkit.com/images/uploads/wpdk-1/templates_images/Template%20Cover%201%20(1)-3527.png',
+      tech: ['WordPress', 'CSS', 'BootStrap', 'JavaScript', 'jQuery'],
+      liveUrl: 'https://etemplates.wdesignkit.com/planpro/',
+      githubUrl: '#',
+      icon: <Globe size={24} />
+    },
+    {
+      id: 3,
+      title: 'ThinkAI',
+      description: 'ThinkAi is a modern Gutenberg template kit for AI and machine learning websites. It highlights AI image generation, photo editing, pricing plans, testimonials, FAQs, and app download links, all in a sleek, professional design.',
+      image: '/thinkai.jpg',
+      tech: ['Woo Commerce', 'WordPress', 'CSS', 'BootStrap', 'JavaScript', 'jQuery'],
+      liveUrl: 'https://etemplates.wdesignkit.com/think-ai/',
       githubUrl: '#',
       icon: <ShoppingCart size={24} />
     },
     {
-      id: 2,
-      title: 'Portfolio Website',
-      description: 'A clean and minimalist portfolio website showcasing creative work with smooth animations.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      liveUrl: '#',
+      id: 4,
+      title: 'Tech-Tide',
+      description: 'Tech-Tide is a sleek and modern prebuilt WordPress Elementor website template kit. It features a clean and minimalist design with a focus on technology and innovation.',
+      image: 'https://wdesignkit.com/images/uploads/wpdk-1/templates_images/TechTide%20_%20Digital%20and%20Marketing%20Agency%20Portfolio%20Figma%20Design%20Template-4299.png',
+      tech: ['WordPress', 'CSS', 'BootStrap', 'JavaScript', 'jQuery'],
+      liveUrl: 'https://etemplates.wdesignkit.com/techtide/',
+      githubUrl: '#',
+      icon: <ShoppingCart size={24} />
+    },
+    {
+      id: 5,
+      title: 'VerdiScape',
+      description: 'The VerdiScape Template Kit for Elementor is a beautifully crafted design package tailored for landscaping, gardening, and outdoor service businesses.',
+      image: 'https://wdesignkit.com/images/uploads/wpdk-1/templates_images/VerdiScape%20kit-9170.png',
+      tech: ['WordPress', 'CSS', 'BootStrap', 'JavaScript', 'jQuery'],
+      liveUrl: 'https://etemplates.wdesignkit.com/verdiscape/',
+      githubUrl: '#',
+      icon: <Globe size={24} />
+    },
+    {
+      id: 6,
+      title: 'TailTrim',
+      description: 'TailTrim is a modern Elementor Template Kit designed for pet grooming services. It offers a clean, user-friendly layout, pre-designed pages, and customizable features to showcase services, attract pet owners, and build a professional online presence effortlessly.',
+      image: 'https://wdesignkit.com/images/uploads/wpdk-1/templates_images/TailTrim%20Kit-1031.png',
+      tech: ['WordPress', 'CSS', 'BootStrap', 'JavaScript', 'jQuery'],
+      liveUrl: 'https://etemplates.wdesignkit.com/tailtrim/',
       githubUrl: '#',
       icon: <Globe size={24} />
     },
@@ -52,7 +92,7 @@ const Projects: React.FC = () => {
                   {project.icon}
                 </div>
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary-500 transition-colors">
                   {project.title}
@@ -60,7 +100,7 @@ const Projects: React.FC = () => {
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
                     <span
@@ -71,7 +111,7 @@ const Projects: React.FC = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex gap-4">
                   <a
                     href={project.liveUrl}
